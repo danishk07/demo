@@ -16,8 +16,10 @@ public class CachingApplication {
 		
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(CachingConfig.class);
 		
+		//get the spring bean
 		CachingConfig cc= ctx.getBean("cachingConfig",CachingConfig.class);
 		
+		//calling method
 		cc.demo();
 		cc.demo1();
 	}
